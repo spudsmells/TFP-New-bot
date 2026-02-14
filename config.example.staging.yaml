@@ -1,0 +1,83 @@
+# ================================
+# Staging Environment Config
+# ================================
+# Use this for pre-production testing
+# Phased rollout: Test features in groups before production
+
+app_id: YOUR_APP_ID_HERE
+guild_id: YOUR_STAGING_GUILD_ID_HERE
+database_url: "sqlite:///bot.staging.db"
+
+# Feature Flags - Phased Rollout Strategy
+features:
+  # === CORE (Always On) ===
+  diagnostics: true
+
+  # === PHASE 1: CORE FEATURES (Stable) ===
+  onboarding: true
+  intros: true
+  age_verify: true
+  xp: true
+  milestones: true
+  achievements: true
+  tickets_member: true
+  tickets_staff: true
+  ticket_lifecycle: true
+  ticket_panel: true
+  bully: true
+  music: true
+  auto_threads: true
+  monthly_stats: true
+
+  # === PHASE 2: MODERATION (Ready for Testing) ===
+  moderation: true             # ✅ Test kick/ban/mute/warn
+  roles: true                  # ✅ Test role management
+  channels: true               # ✅ Test slowmode/lock/unlock/purge
+  sticky: true                 # ✅ Test sticky messages
+
+  # === PHASE 3: COMMUNITY (Gradual Rollout) ===
+  # Enable ONE AT A TIME for focused testing
+
+  birthdays: true              # ✅ Week 1: Test birthday system
+  counting: false              # ⏳ Week 2: Enable after birthdays tested
+  confessions: false           # ⏳ Week 3: Enable after counting tested
+  bump: false                  # ⏳ Week 4: Enable last
+
+  # Counting channels (when enabled)
+  counting_channels:
+    - 0  # Replace with actual channel ID
+
+# Channel IDs (Staging server)
+channels:
+  rules: 0
+  welcome: 0
+  intros: 0
+  staff_alerts: 0
+  onboarding_fallback: 0
+  mod_logs: 0
+
+  # Phase 3 channels
+  birthday_announcements: 0
+  confession_review: 0
+  confessions: 0
+  bump_reminders: 0
+
+# Role IDs
+roles:
+  pending: 0
+  gaybor: 0
+  staff: 0
+  bump_reminder: 0
+
+# Embed branding
+embeds:
+  footer_text: "STAGING BOT - Pre-Production Testing"
+  thumbnail_url: null
+
+# XP Configuration
+xp:
+  message_min: 5
+  message_max: 15
+  cooldown_seconds: 60
+  base_level_xp: 100
+  xp_multiplier: 1.5

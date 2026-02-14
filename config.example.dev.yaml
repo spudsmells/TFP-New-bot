@@ -1,0 +1,90 @@
+# ================================
+# Development Environment Config
+# ================================
+# Use this for local testing - all features DISABLED by default
+# Enable only what you're actively testing
+
+app_id: YOUR_APP_ID_HERE
+guild_id: YOUR_GUILD_ID_HERE
+database_url: "sqlite:///bot.dev.db"
+
+# Feature Flags - Granular Control
+# Set to true to enable, false to disable
+features:
+  # === CORE (Recommended to keep enabled) ===
+  diagnostics: true            # /ping, /status, /version, /reload-config
+
+  # === TESTING AREA ===
+  # Enable ONLY what you're currently testing
+
+  # Onboarding & Members
+  onboarding: false            # Rules agreement, welcome flow
+  intros: false                # Introduction submission/review
+  age_verify: false            # Age verification system
+
+  # Progression
+  xp: false                    # XP earning and leveling
+  milestones: false            # Level milestone notifications
+  achievements: false          # Achievement unlocks
+
+  # Tickets
+  tickets_member: false        # Member ticket commands (/ticket)
+  tickets_staff: false         # Staff ticket commands (/ticket-claim, etc)
+  ticket_lifecycle: false      # Ticket auto-close, nudges
+  ticket_panel: false          # Ticket panel embed
+
+  # Fun & Utilities
+  bully: false                 # /bully command (playful insults)
+  music: false                 # Music link conversion
+  auto_threads: false          # Auto-thread creation
+  monthly_stats: false         # Monthly analytics reports
+
+  # === PHASE 2: MODERATION (NEW) ===
+  moderation: false            # /kick, /ban, /mute, /warn
+  roles: false                 # /addrole, /removerole, /listroles
+  channels: false              # /slowmode, /lock, /unlock, /purge
+  sticky: false                # Sticky messages system
+
+  # === PHASE 3: COMMUNITY (NEW) ===
+  birthdays: false             # Birthday tracking & announcements
+  counting: false              # Counting channel game
+  confessions: false           # Anonymous confessions
+  bump: false                  # Server bump reminders
+
+  # Counting channels (if counting enabled)
+  counting_channels: []
+
+# Channel IDs
+channels:
+  rules: 0
+  welcome: 0
+  intros: 0
+  staff_alerts: 0
+  onboarding_fallback: 0
+  mod_logs: 0
+
+  # Phase 3 channels
+  birthday_announcements: 0
+  confession_review: 0
+  confessions: 0
+  bump_reminders: 0
+
+# Role IDs
+roles:
+  pending: 0
+  gaybor: 0
+  staff: 0
+  bump_reminder: 0  # Optional
+
+# Embed branding
+embeds:
+  footer_text: "DEV BOT - Testing Environment"
+  thumbnail_url: null
+
+# XP Configuration
+xp:
+  message_min: 5
+  message_max: 15
+  cooldown_seconds: 60
+  base_level_xp: 100
+  xp_multiplier: 1.5

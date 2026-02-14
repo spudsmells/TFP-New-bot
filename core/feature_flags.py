@@ -10,21 +10,45 @@ logger = logging.getLogger(__name__)
 
 # Maps feature flag names to cog module paths
 COG_FLAG_MAP: dict[str, str] = {
+    # Core / Diagnostics (always recommended)
     "diagnostics": "cogs.diagnostics",
+    "feature_toggle": "cogs.feature_toggle",  # Runtime feature management
+
+    # Onboarding & Member Management
     "onboarding": "cogs.onboarding",
-    "xp": "cogs.xp",
-    "auto_threads": "cogs.auto_threads",
     "intros": "cogs.intros",
-    "bully": "cogs.bully",
-    "music": "cogs.music",
-    "tickets_member": "cogs.tickets_member",
-    "tickets_staff": "cogs.tickets_staff",
     "age_verify": "cogs.age_verify",
-    "ticket_lifecycle": "cogs.ticket_lifecycle",
-    "ticket_panel": "cogs.ticket_panel",
+
+    # Progression & Engagement
+    "xp": "cogs.xp",
     "milestones": "cogs.milestones",
     "achievements": "cogs.achievements",
+
+    # Tickets & Support
+    "tickets_member": "cogs.tickets_member",
+    "tickets_staff": "cogs.tickets_staff",
+    "ticket_lifecycle": "cogs.ticket_lifecycle",
+    "ticket_panel": "cogs.ticket_panel",
+
+    # Fun & Utilities
+    "bully": "cogs.bully",
+    "music": "cogs.music",
+    "auto_threads": "cogs.auto_threads",
     "monthly_stats": "cogs.monthly_stats",
+
+    # === NEW FEATURES (Phase 2 & 3) ===
+
+    # Moderation Suite (Phase 2)
+    "moderation": "cogs.moderation",
+    "roles": "cogs.roles",
+    "channels": "cogs.channels",
+    "sticky": "cogs.sticky",
+
+    # Community Features (Phase 3)
+    "birthdays": "cogs.birthdays",
+    "counting": "cogs.counting",
+    "confessions": "cogs.confessions",
+    "bump": "cogs.bump",
 }
 
 

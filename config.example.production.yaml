@@ -1,0 +1,90 @@
+# ================================
+# Production Environment Config
+# ================================
+# Use this for live server - enable features only after staging tests pass
+
+app_id: YOUR_APP_ID_HERE
+guild_id: YOUR_GUILD_ID_HERE
+database_url: "postgresql://user:pass@localhost/gayborhood_bot"  # Use PostgreSQL for prod!
+
+# Feature Flags - Production Ready Features Only
+features:
+  # === CORE (Always On) ===
+  diagnostics: true
+
+  # === STABLE FEATURES (Tested & Approved) ===
+  onboarding: true
+  intros: true
+  age_verify: true
+  xp: true
+  milestones: true
+  achievements: true
+  tickets_member: true
+  tickets_staff: true
+  ticket_lifecycle: true
+  ticket_panel: true
+  bully: true
+  music: true
+  auto_threads: true
+  monthly_stats: true
+
+  # === PHASE 2: MODERATION (Enable after testing) ===
+  moderation: true             # ✅ Staff training completed
+  roles: true                  # ✅ Permissions verified
+  channels: true               # ✅ Tested with real scenarios
+  sticky: true                 # ✅ Performance validated
+
+  # === PHASE 3: COMMUNITY (Gradual Production Rollout) ===
+  # Enable progressively as each feature is battle-tested in staging
+
+  birthdays: true              # ✅ Enabled after 1 week staging
+  counting: false              # ⏳ Enable after 2 weeks
+  confessions: false           # ⏳ Requires moderation training
+  bump: false                  # ⏳ Enable when community ready
+
+  # Counting channels (when enabled)
+  counting_channels:
+    - 0  # Replace with actual channel ID
+
+# Channel IDs (Production server)
+channels:
+  rules: 0
+  welcome: 0
+  intros: 0
+  staff_alerts: 0
+  onboarding_fallback: 0
+  mod_logs: 0
+
+  # Phase 3 channels
+  birthday_announcements: 0
+  confession_review: 0
+  confessions: 0
+  bump_reminders: 0
+
+# Role IDs
+roles:
+  pending: 0
+  gaybor: 0
+  staff: 0
+  bump_reminder: 0
+
+# Embed branding
+embeds:
+  footer_text: "The Gayborhood Bot"
+  thumbnail_url: "https://your-cdn.com/logo.png"
+
+# XP Configuration
+xp:
+  message_min: 5
+  message_max: 15
+  cooldown_seconds: 60
+  base_level_xp: 100
+  xp_multiplier: 1.5
+
+# Production Recommendations:
+# - Use PostgreSQL instead of SQLite for better performance
+# - Set up automated backups of the database
+# - Monitor /status regularly for health checks
+# - Use /reload-config for hot config updates (no restart needed)
+# - Keep logs for at least 30 days
+# - Test all features in staging first!
