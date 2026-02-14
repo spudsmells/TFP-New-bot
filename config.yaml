@@ -1,0 +1,235 @@
+# ──────────────────────────────────────────────
+# The Gayborhood Bot — Configuration
+# ──────────────────────────────────────────────
+
+guild_id: 000000000000000000  # Replace with your server ID
+
+# ── Roles ──────────────────────────────────────
+roles:
+  pending: 000000000000000000
+  gaybor: 000000000000000000
+  staff: 000000000000000000
+  admin: 000000000000000000
+  age_verified: 000000000000000000
+  muted: 000000000000000000
+  # Regional roles (mapped from intro location)
+  region_na_east: 000000000000000000
+  region_na_west: 000000000000000000
+  region_na_central: 000000000000000000
+  region_eu: 000000000000000000
+  region_uk: 000000000000000000
+  region_oceania: 000000000000000000
+  region_asia: 000000000000000000
+  region_sa: 000000000000000000
+  region_africa: 000000000000000000
+  region_other: 000000000000000000
+
+# ── Channels ───────────────────────────────────
+channels:
+  onboarding_fallback: 000000000000000000
+  staff_review: 000000000000000000
+  welcome: 000000000000000000
+  ticket_booth: 000000000000000000
+  ticket_category: 000000000000000000
+  ticket_archive_category: 000000000000000000
+  staff_alerts: 000000000000000000
+  bot_logs: 000000000000000000
+  levelup: 000000000000000000         # Channel to post level-up cards
+
+# ── Feature Flags ──────────────────────────────
+features:
+  diagnostics: true
+  onboarding: true
+  xp: false
+  auto_threads: false
+  intros: false
+  bully: false
+  music: false
+  tickets_member: false
+  tickets_staff: false
+  age_verify: false
+  ticket_lifecycle: false
+  ticket_panel: false
+  milestones: false
+  achievements: false
+  monthly_stats: false
+
+# ── XP Settings ────────────────────────────────
+xp:
+  message_min: 10
+  message_max: 20
+  message_cooldown_seconds: 60
+  voice_per_minute: 5
+  voice_check_interval_seconds: 60
+  reaction_xp: 2
+  reaction_max_per_message: 20
+  intro_bonus: 50
+  age_verify_bonus: 100
+  level_formula: "50 * level^2 + 50 * level"
+  milestone_levels: [5, 10, 15, 20, 25, 30, 40, 50, 75, 100]
+  age_verify_level: 15
+
+# ── Threading Settings ─────────────────────────
+threading:
+  max_threads_per_minute: 5
+  default_name_format: "{username} - {file_type}"
+  auto_archive_duration: 1440  # minutes (24h)
+
+# ── Rate Limits ────────────────────────────────
+rate_limits:
+  bully_cooldown_seconds: 60
+  bully_abuse_threshold: 10
+  bully_abuse_window_seconds: 3600
+  music_per_user: 3
+  music_window_seconds: 600
+
+# ── Ticket Settings ───────────────────────────
+tickets:
+  member_nudge_hours: 2
+  staff_reminder_hours: 12
+  mute_default_minutes: 30
+  member_close_window_hours: 2
+
+# ── Embeds ─────────────────────────────────────
+embeds:
+  footer_text: "The Gayborhood Bot"
+  thumbnail_url: ""
+
+# ── Location Mapping ──────────────────────────
+# Fuzzy-matched against intro location field
+location_mapping:
+  region_na_east:
+    - "new york"
+    - "florida"
+    - "east coast"
+    - "northeast"
+    - "southeast"
+    - "virginia"
+    - "massachusetts"
+    - "pennsylvania"
+    - "georgia"
+    - "carolina"
+    - "maryland"
+    - "new jersey"
+    - "connecticut"
+    - "maine"
+    - "ohio"
+    - "michigan"
+  region_na_west:
+    - "california"
+    - "west coast"
+    - "pacific"
+    - "oregon"
+    - "washington"
+    - "nevada"
+    - "arizona"
+    - "colorado"
+    - "utah"
+    - "hawaii"
+    - "alaska"
+  region_na_central:
+    - "texas"
+    - "midwest"
+    - "central"
+    - "illinois"
+    - "minnesota"
+    - "wisconsin"
+    - "iowa"
+    - "missouri"
+    - "kansas"
+    - "oklahoma"
+    - "nebraska"
+    - "indiana"
+    - "tennessee"
+    - "kentucky"
+    - "alabama"
+    - "mississippi"
+    - "louisiana"
+    - "arkansas"
+  region_eu:
+    - "europe"
+    - "germany"
+    - "france"
+    - "spain"
+    - "italy"
+    - "netherlands"
+    - "belgium"
+    - "portugal"
+    - "sweden"
+    - "norway"
+    - "denmark"
+    - "finland"
+    - "poland"
+    - "austria"
+    - "switzerland"
+    - "greece"
+    - "ireland"
+    - "czech"
+  region_uk:
+    - "uk"
+    - "united kingdom"
+    - "england"
+    - "scotland"
+    - "wales"
+    - "london"
+    - "britain"
+    - "british"
+  region_oceania:
+    - "australia"
+    - "new zealand"
+    - "oceania"
+    - "aussie"
+    - "nz"
+  region_asia:
+    - "asia"
+    - "japan"
+    - "korea"
+    - "china"
+    - "india"
+    - "philippines"
+    - "singapore"
+    - "thailand"
+    - "vietnam"
+    - "indonesia"
+    - "malaysia"
+    - "taiwan"
+  region_sa:
+    - "south america"
+    - "brazil"
+    - "argentina"
+    - "chile"
+    - "colombia"
+    - "mexico"
+    - "peru"
+    - "latin"
+    - "central america"
+  region_africa:
+    - "africa"
+    - "south africa"
+    - "nigeria"
+    - "kenya"
+    - "egypt"
+    - "morocco"
+  region_other:
+    - "other"
+    - "prefer not"
+    - "secret"
+    - "earth"
+    - "online"
+    - "internet"
+    - "everywhere"
+    - "nowhere"
+    - "canada"
+
+# ── Monthly Stats Settings ───────────────────
+monthly_stats:
+  report_channel: 000000000000000000   # Channel to post monthly reports
+  tracking_channels: []                 # Empty = all channels, or list specific IDs
+  excluded_channels: []                 # Channels to exclude from tracking
+  batch_flush_seconds: 60
+  monthly_xp_rewards:
+    most_messages: 500
+    most_active_days: 500
+    most_voice: 300
+    most_mentioned: 200
+    top_reactor: 200

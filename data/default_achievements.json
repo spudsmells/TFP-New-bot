@@ -1,0 +1,323 @@
+{
+  "achievements": [
+    {
+      "key": "chatterbox_100",
+      "name": "Chatty",
+      "description": "Send 100 messages",
+      "trigger_type": "messages_sent",
+      "trigger_value": 100,
+      "icon": "chat",
+      "rarity": "common",
+      "category": "social",
+      "xp_reward": 50
+    },
+    {
+      "key": "chatterbox_500",
+      "name": "Chatterbox",
+      "description": "Send 500 messages",
+      "trigger_type": "messages_sent",
+      "trigger_value": 500,
+      "icon": "chat",
+      "rarity": "common",
+      "category": "social",
+      "xp_reward": 100
+    },
+    {
+      "key": "chatterbox_1000",
+      "name": "Motor Mouth",
+      "description": "Send 1,000 messages",
+      "trigger_type": "messages_sent",
+      "trigger_value": 1000,
+      "icon": "chat",
+      "rarity": "rare",
+      "category": "social",
+      "xp_reward": 200
+    },
+    {
+      "key": "chatterbox_5000",
+      "name": "Keyboard Warrior",
+      "description": "Send 5,000 messages",
+      "trigger_type": "messages_sent",
+      "trigger_value": 5000,
+      "icon": "chat",
+      "rarity": "epic",
+      "category": "social",
+      "xp_reward": 500
+    },
+    {
+      "key": "chatterbox_10000",
+      "name": "Chat Legend",
+      "description": "Send 10,000 messages",
+      "trigger_type": "messages_sent",
+      "trigger_value": 10000,
+      "icon": "crown",
+      "rarity": "legendary",
+      "category": "social",
+      "xp_reward": 1000
+    },
+    {
+      "key": "level_5",
+      "name": "Getting Started",
+      "description": "Reach Level 5",
+      "trigger_type": "level_reached",
+      "trigger_value": 5,
+      "icon": "star",
+      "rarity": "common",
+      "category": "xp",
+      "xp_reward": 25
+    },
+    {
+      "key": "level_10",
+      "name": "Rising Star",
+      "description": "Reach Level 10",
+      "trigger_type": "level_reached",
+      "trigger_value": 10,
+      "icon": "star",
+      "rarity": "common",
+      "category": "xp",
+      "xp_reward": 50
+    },
+    {
+      "key": "level_25",
+      "name": "Dedicated",
+      "description": "Reach Level 25",
+      "trigger_type": "level_reached",
+      "trigger_value": 25,
+      "icon": "star",
+      "rarity": "rare",
+      "category": "xp",
+      "xp_reward": 150
+    },
+    {
+      "key": "level_50",
+      "name": "Veteran",
+      "description": "Reach Level 50",
+      "trigger_type": "level_reached",
+      "trigger_value": 50,
+      "icon": "trophy",
+      "rarity": "epic",
+      "category": "xp",
+      "xp_reward": 500
+    },
+    {
+      "key": "level_100",
+      "name": "Gayborhood Legend",
+      "description": "Reach Level 100",
+      "trigger_type": "level_reached",
+      "trigger_value": 100,
+      "icon": "crown",
+      "rarity": "legendary",
+      "category": "xp",
+      "xp_reward": 2000
+    },
+    {
+      "key": "voice_60",
+      "name": "Voice Debut",
+      "description": "Spend 1 hour in voice chat",
+      "trigger_type": "vc_minutes",
+      "trigger_value": 60,
+      "icon": "mic",
+      "rarity": "common",
+      "category": "voice",
+      "xp_reward": 50
+    },
+    {
+      "key": "voice_300",
+      "name": "Voice Regular",
+      "description": "Spend 5 hours in voice chat",
+      "trigger_type": "vc_minutes",
+      "trigger_value": 300,
+      "icon": "mic",
+      "rarity": "common",
+      "category": "voice",
+      "xp_reward": 100
+    },
+    {
+      "key": "voice_1000",
+      "name": "Voice Addict",
+      "description": "Spend ~17 hours in voice chat",
+      "trigger_type": "vc_minutes",
+      "trigger_value": 1000,
+      "icon": "mic",
+      "rarity": "rare",
+      "category": "voice",
+      "xp_reward": 250
+    },
+    {
+      "key": "voice_5000",
+      "name": "Voice Legend",
+      "description": "Spend ~83 hours in voice chat",
+      "trigger_type": "vc_minutes",
+      "trigger_value": 5000,
+      "icon": "mic",
+      "rarity": "epic",
+      "category": "voice",
+      "xp_reward": 750
+    },
+    {
+      "key": "voice_10000",
+      "name": "Always On Mic",
+      "description": "Spend ~167 hours in voice chat",
+      "trigger_type": "vc_minutes",
+      "trigger_value": 10000,
+      "icon": "crown",
+      "rarity": "legendary",
+      "category": "voice",
+      "xp_reward": 1500
+    },
+    {
+      "key": "age_verified",
+      "name": "Verified",
+      "description": "Complete age verification",
+      "trigger_type": "age_verified",
+      "trigger_value": 1,
+      "icon": "heart",
+      "rarity": "common",
+      "category": "special",
+      "xp_reward": 100
+    },
+    {
+      "key": "reactions_50",
+      "name": "Thumbs Up",
+      "description": "Give 50 reactions",
+      "trigger_type": "reactions_given",
+      "trigger_value": 50,
+      "icon": "heart",
+      "rarity": "common",
+      "category": "social",
+      "xp_reward": 25
+    },
+    {
+      "key": "reactions_200",
+      "name": "Emote Enthusiast",
+      "description": "Give 200 reactions",
+      "trigger_type": "reactions_given",
+      "trigger_value": 200,
+      "icon": "heart",
+      "rarity": "common",
+      "category": "social",
+      "xp_reward": 75
+    },
+    {
+      "key": "reactions_500",
+      "name": "Reaction King",
+      "description": "Give 500 reactions",
+      "trigger_type": "reactions_given",
+      "trigger_value": 500,
+      "icon": "heart",
+      "rarity": "rare",
+      "category": "social",
+      "xp_reward": 150
+    },
+    {
+      "key": "reactions_1000",
+      "name": "React Master",
+      "description": "Give 1,000 reactions",
+      "trigger_type": "reactions_given",
+      "trigger_value": 1000,
+      "icon": "fire",
+      "rarity": "epic",
+      "category": "social",
+      "xp_reward": 400
+    },
+    {
+      "key": "days_7",
+      "name": "Weekly Regular",
+      "description": "Be active for 7 days",
+      "trigger_type": "days_active",
+      "trigger_value": 7,
+      "icon": "fire",
+      "rarity": "common",
+      "category": "general",
+      "xp_reward": 50
+    },
+    {
+      "key": "days_30",
+      "name": "Monthly Fixture",
+      "description": "Be active for 30 days",
+      "trigger_type": "days_active",
+      "trigger_value": 30,
+      "icon": "fire",
+      "rarity": "rare",
+      "category": "general",
+      "xp_reward": 200
+    },
+    {
+      "key": "days_90",
+      "name": "Quarter Veteran",
+      "description": "Be active for 90 days",
+      "trigger_type": "days_active",
+      "trigger_value": 90,
+      "icon": "fire",
+      "rarity": "epic",
+      "category": "general",
+      "xp_reward": 500
+    },
+    {
+      "key": "days_365",
+      "name": "Year-Round Gaybor",
+      "description": "Be active for 365 days",
+      "trigger_type": "days_active",
+      "trigger_value": 365,
+      "icon": "crown",
+      "rarity": "legendary",
+      "category": "general",
+      "xp_reward": 2000
+    },
+    {
+      "key": "intros_10",
+      "name": "Welcome Wagon",
+      "description": "Review 10 introductions (Staff)",
+      "trigger_type": "intros_reviewed",
+      "trigger_value": 10,
+      "icon": "star",
+      "rarity": "rare",
+      "category": "staff",
+      "xp_reward": 200
+    },
+    {
+      "key": "intros_50",
+      "name": "Gatekeeper",
+      "description": "Review 50 introductions (Staff)",
+      "trigger_type": "intros_reviewed",
+      "trigger_value": 50,
+      "icon": "trophy",
+      "rarity": "epic",
+      "category": "staff",
+      "xp_reward": 500
+    },
+    {
+      "key": "tickets_5",
+      "name": "Helpful Hand",
+      "description": "Close 5 support tickets (Staff)",
+      "trigger_type": "tickets_closed",
+      "trigger_value": 5,
+      "icon": "star",
+      "rarity": "rare",
+      "category": "staff",
+      "xp_reward": 150
+    },
+    {
+      "key": "tickets_25",
+      "name": "Support Hero",
+      "description": "Close 25 support tickets (Staff)",
+      "trigger_type": "tickets_closed",
+      "trigger_value": 25,
+      "icon": "trophy",
+      "rarity": "epic",
+      "category": "staff",
+      "xp_reward": 500
+    },
+    {
+      "key": "tickets_50",
+      "name": "Ticket Machine",
+      "description": "Close 50 support tickets (Staff)",
+      "trigger_type": "tickets_closed",
+      "trigger_value": 50,
+      "icon": "crown",
+      "rarity": "legendary",
+      "category": "staff",
+      "xp_reward": 1000
+    }
+  ]
+}

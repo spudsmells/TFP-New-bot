@@ -1,0 +1,4 @@
+# Custom slur/profanity filter list
+# One word per line. Lines starting with # are comments.
+# These words supplement the built-in better-profanity list.
+# Add server-specific terms that should be filtered.

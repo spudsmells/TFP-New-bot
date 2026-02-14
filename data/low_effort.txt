@@ -1,0 +1,31 @@
+# Low-effort intro phrases
+# If a bio starts with or exactly matches these, it's rejected.
+# One phrase per line (case-insensitive). Lines starting with # are comments.
+hi
+hello
+hey
+sup
+yo
+nothing
+idk
+i don't know
+n/a
+na
+none
+no
+yes
+.
+..
+...
+test
+testing
+asdf
+aaa
+lol
+lmao
+bruh
+whatever
+stuff
+things
+i like stuff
+just chilling

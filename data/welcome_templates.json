@@ -1,0 +1,34 @@
+{
+  "groups": [
+    {
+      "weight": 3,
+      "sentences": [
+        "Welcome to {server_name}, {name}! We're so glad you're here!",
+        "Hey everyone, {name} just joined the neighborhood! Give them a warm welcome!",
+        "Look who just moved into {server_name} — welcome, {name}!",
+        "A wild {name} appeared! Welcome to {server_name}!",
+        "{name} has entered the chat! Welcome to the best neighborhood on Discord!"
+      ]
+    },
+    {
+      "weight": 2,
+      "sentences": [
+        "Everybody say hi to {name}! They just joined {server_name}!",
+        "The neighborhood just got a little more fabulous — welcome, {name}!",
+        "Roll out the rainbow carpet for {name}! Welcome to {server_name}!",
+        "{name} just walked through the door! Make them feel at home!",
+        "New gaybor alert! Everyone welcome {name} to {server_name}!"
+      ]
+    },
+    {
+      "weight": 1,
+      "sentences": [
+        "Breaking news: {name} is officially a gaybor! Welcome!",
+        "The gayborhood HOA has approved {name}'s application. Welcome home!",
+        "{name} has been granted their gaybor card. Welcome to {server_name}!",
+        "Someone call the welcome committee — {name} just moved in!",
+        "Dear {name}, your gayborhood starter pack is in the mail. Welcome!"
+      ]
+    }
+  ]
+}
