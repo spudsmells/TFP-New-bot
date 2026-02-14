@@ -4,9 +4,10 @@
 # Use this for pre-production testing
 # Phased rollout: Test features in groups before production
 
-app_id: YOUR_APP_ID_HERE
+# NOTE: Bot token, app ID, and database URL are in .env file!
+# See .env.example for required environment variables
+
 guild_id: YOUR_STAGING_GUILD_ID_HERE
-database_url: "sqlite:///bot.staging.db"
 
 # Feature Flags - Phased Rollout Strategy
 features:
