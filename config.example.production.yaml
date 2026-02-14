@@ -3,9 +3,11 @@
 # ================================
 # Use this for live server - enable features only after staging tests pass
 
-app_id: YOUR_APP_ID_HERE
+# NOTE: Bot token, app ID, and database URL are in .env file!
+# See .env.example for required environment variables
+# For production, use PostgreSQL in DATABASE_URL!
+
 guild_id: YOUR_GUILD_ID_HERE
-database_url: "postgresql://user:pass@localhost/gayborhood_bot"  # Use PostgreSQL for prod!
 
 # Feature Flags - Production Ready Features Only
 features:

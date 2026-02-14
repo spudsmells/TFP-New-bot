@@ -4,9 +4,10 @@
 # Use this for local testing - all features DISABLED by default
 # Enable only what you're actively testing
 
-app_id: YOUR_APP_ID_HERE
+# NOTE: Bot token, app ID, and database URL are in .env file!
+# See .env.example for required environment variables
+
 guild_id: YOUR_GUILD_ID_HERE
-database_url: "sqlite:///bot.dev.db"
 
 # Feature Flags - Granular Control
 # Set to true to enable, false to disable
