@@ -309,3 +309,53 @@ CREATE TABLE IF NOT EXISTS mention_tracking (
     UNIQUE(date, mentioned_id)
 );
 CREATE INDEX IF NOT EXISTS idx_mention_date ON mention_tracking(date);
+
+-- ── Birthdays ─────────────────────────────────
+CREATE TABLE IF NOT EXISTS birthdays (
+    user_id         INTEGER PRIMARY KEY,
+    birth_month     INTEGER NOT NULL,
+    birth_day       INTEGER NOT NULL,
+    birth_year      INTEGER,
+    announce        INTEGER NOT NULL DEFAULT 1,
+    created_at      TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_birthdays_date ON birthdays(birth_month, birth_day);
+
+-- ── Counting Stats ────────────────────────────
+CREATE TABLE IF NOT EXISTS counting_stats (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    channel_id      INTEGER NOT NULL,
+    current_count   INTEGER NOT NULL DEFAULT 0,
+    highest_count   INTEGER NOT NULL DEFAULT 0,
+    last_user_id    INTEGER,
+    last_count_at   TEXT,
+    fails           INTEGER NOT NULL DEFAULT 0,
+    created_at      TEXT NOT NULL DEFAULT (datetime('now')),
+    updated_at      TEXT NOT NULL DEFAULT (datetime('now')),
+    UNIQUE(channel_id)
+);
+
+-- ── Confessions ───────────────────────────────
+CREATE TABLE IF NOT EXISTS confessions (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    confession_num  INTEGER NOT NULL,
+    user_id         INTEGER NOT NULL,
+    content         TEXT NOT NULL,
+    message_id      INTEGER,
+    channel_id      INTEGER,
+    approved        INTEGER NOT NULL DEFAULT 0,
+    rejected        INTEGER NOT NULL DEFAULT 0,
+    reviewed_by     INTEGER,
+    reviewed_at     TEXT,
+    created_at      TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_confessions_user ON confessions(user_id);
+CREATE INDEX IF NOT EXISTS idx_confessions_status ON confessions(approved, rejected);
+
+-- ── Bump Reminders ────────────────────────────
+CREATE TABLE IF NOT EXISTS bump_stats (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id         INTEGER NOT NULL,
+    bumped_at       TEXT NOT NULL DEFAULT (datetime('now'))
+);
+CREATE INDEX IF NOT EXISTS idx_bump_stats_user ON bump_stats(user_id);

@@ -9,7 +9,7 @@ if TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-CURRENT_VERSION = 2
+CURRENT_VERSION = 3
 SCHEMA_PATH = Path(__file__).parent / "schema.sql"
 
 
